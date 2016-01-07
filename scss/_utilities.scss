@@ -47,5 +47,16 @@
   } @else {
     @error "`#{$element}` is not a valid pseudo-element.";
   }
+}
 
+@mixin e($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+
+@mixin m($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
 }
