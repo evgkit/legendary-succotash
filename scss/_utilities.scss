@@ -3,9 +3,49 @@
 // ==========================================================================
 
 // Import if Google Fonts URL is defined
-
+@if variable-exists(font-url--google) {
+  @import url($font-url--google);
+}
 
 // Functions and Directives
+@function em($target, $context: $base__font-size) {
+  @return ($target / $context) * 1em;
+}
 
+@function palette($palette, $shade: 'base') {
+  @return map-get(map-get($palettes, $palette), $shade);
+}
 
 // Mixins
+@mixin bg-colors($map) {
+  @each $theme, $color in $map {
+    &--#{$theme} {
+      background-color: $color;
+    }
+  }
+}
+
+@mixin img-replace($img, $width, $height, $display: block) {
+  background: url('#{$path--rel}/#{$img}') no-repeat;
+  width: $width;
+  height: $height;
+  display: $display;
+}
+
+@mixin pseudo-element(
+  $element,
+  $element-width: null,
+  $element-height: null
+) {
+  @if $element == "before" or $element == "after" {
+    &:#{$element} {
+      @extend %pseudos;
+      width: $element-width;
+      height: $element-height;
+      @content;
+    }
+  } @else {
+    @error "`#{$element}` is not a valid pseudo-element.";
+  }
+
+}
