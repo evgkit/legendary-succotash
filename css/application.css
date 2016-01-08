@@ -14,7 +14,7 @@
   content: '';
   position: absolute; }
 
-[class^="btn--"] {
+.panel--centered, .panel--padded--centered, [class^="btn--"] {
   text-align: center; }
 
 html {
@@ -265,6 +265,14 @@ footer {
   footer p {
     font-size: 1em;
     margin-top: 1.375em; }
+
+.panel, .panel--centered {
+  padding-top: 1.875em;
+  padding-bottom: 1.25em; }
+
+.panel--padded, .panel--padded--centered {
+  padding-top: 5em;
+  padding-bottom: 2.125em; }
 
 .container {
   max-width: 61.875em;

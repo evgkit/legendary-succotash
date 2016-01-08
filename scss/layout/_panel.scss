@@ -1,4 +1,17 @@
-// ==========================================================================
-// Panels
-// ==========================================================================
+.panel {
 
+  @extend %panel-default;
+  &--centered {
+    @extend %center-align;
+    @extend %panel-default;
+  }
+
+  &--padded {
+    @extend %panel-padding;
+    &--centered {
+      @extend %center-align;
+      @extend %panel-padding;
+    }
+  }
+
+}
