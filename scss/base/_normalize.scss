@@ -1,8 +1,4 @@
-// ==========================================================================
-// Normalize.css Reset
-// ==========================================================================
-
-//! v3.0.1 | MIT License | git.io/normalize
+//! normalize.css v3.0.1 | MIT License | git.io/normalize
 
 // 1. Set default font family to sans-serif.
 // 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -284,9 +280,9 @@ input {
 
 // It's recommended that you don't attempt to style these elements.
 // Firefox's implementation doesn't respect box-sizing, padding, or width.
- *
-// 1. Address box sizing set to `content-box` in IE 8/9/10.
-// 2. Remove excess padding in IE 8/9/10.
+*
+  // 1. Address box sizing set to `content-box` in IE 8/9/10.
+  // 2. Remove excess padding in IE 8/9/10.
 
 
 input[type="checkbox"],

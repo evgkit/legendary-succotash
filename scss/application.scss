@@ -1,10 +1,5 @@
-@import 'config';
-@import 'helpers';
-@import 'utilities';
-@import 'reset';
-@import 'extends';
-@import 'base';
-@import 'main';
-@import 'nav';
-@import 'headlines';
-@import 'form';
+@import "utilities/index";
+@import "base/index";
+@import "layout/index";
+@import "modules/index";
+@import "states/index";

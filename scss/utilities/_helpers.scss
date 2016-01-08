@@ -29,3 +29,13 @@
   content: ''; 
   position: absolute;
 }
+
+%center-align {
+  text-align: center;
+}
+
+%centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
